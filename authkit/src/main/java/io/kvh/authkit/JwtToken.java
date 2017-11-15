@@ -9,7 +9,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.Date;
 
 /**
- * Created by changbinhe on 2017/1/19.
+ *
+ * @author changbinhe
+ * @date 2017/1/19
  */
 public class JwtToken implements Token<Long> {
 

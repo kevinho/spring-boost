@@ -1,7 +1,8 @@
 package io.kvh.authkit;
 
 /**
- * Created by changbinhe on 2017/1/18.
+ * @author changbinhe
+ * @date 2017/1/18
  */
 public class AuthKit {
 

@@ -4,7 +4,9 @@ import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by changbinhe on 2017/1/19.
+ *
+ * @author changbinhe
+ * @date 2017/1/19
  */
 public class SaltyCredential implements Credential {
 
