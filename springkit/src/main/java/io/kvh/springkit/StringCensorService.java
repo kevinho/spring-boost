@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit;
+package io.kvh.springkit;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit.error;
+package io.kvh.springkit.error;
 
 import lombok.Data;
 

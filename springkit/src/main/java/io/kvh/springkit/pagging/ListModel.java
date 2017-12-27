@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit.pagging;
+package io.kvh.springkit.pagging;
 
 import lombok.Data;
 

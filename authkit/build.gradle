@@ -2,6 +2,7 @@ group 'io.kvh'
 version '1.0.0'
 
 apply plugin: 'java'
+apply plugin: 'maven'
 
 buildscript {
     repositories {
@@ -20,11 +21,21 @@ repositories {
     mavenCentral()
     jcenter()
     maven {
-        url "http://maven.weicou.com:28081/artifactory/libs-local"
+        url "http://maven.ihuanqu.com:28081/artifactory/libs-local"
         credentials {
             username = "${artifactory_username}"
             password = "${artifactory_password}"
         }
+    }
+}
+
+//deploy local
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: LOCAL_REPO_URL)
+        pom.groupId = PROJ_GROUP
+        pom.artifactId = PROJ_ARTIFACTID
+        pom.version = PROJ_VERSION
     }
 }
 

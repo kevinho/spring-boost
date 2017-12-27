@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit.sms;
+package io.kvh.springkit.sms;
 
 /**
  * @author changbinhe

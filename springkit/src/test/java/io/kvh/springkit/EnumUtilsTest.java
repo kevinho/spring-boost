@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit;
+package io.kvh.springkit;
 
 import org.junit.Assert;
 import org.junit.Test;

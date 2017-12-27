@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit.sms;
+package io.kvh.springkit.sms;
 
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;

@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit;
+package io.kvh.springkit;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;

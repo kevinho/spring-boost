@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit;
+package io.kvh.springkit;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

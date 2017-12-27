@@ -1,4 +1,4 @@
-package com.ihuanqu.springkit;
+package io.kvh.springkit;
 
 /**
  * Created by changbinhe on 2017/3/14.
