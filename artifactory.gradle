@@ -1,0 +1,34 @@
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'maven-publish'
+
+//deploy to artifactory
+publishing {
+    publications {
+        jar(MavenPublication) {
+            from components.java
+            groupId PROJ_GROUP
+            version PROJ_VERSION
+            artifactId PROJ_ARTIFACTID
+        }
+    }
+}
+
+artifactory {
+    contextUrl = ARTIFACTORY_URL
+    publish {
+        repository {
+
+            repoKey = PROJ_VERSION.endsWith('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local'
+
+            username = artifactory_username
+            password = artifactory_password
+        }
+        defaults {
+            publications('jar')
+            publishArtifacts = true
+
+            properties = ['qa.level': 'basic', 'q.os': 'android', 'dev.team': 'core']
+            publishPom = true
+        }
+    }
+}

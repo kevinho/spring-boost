@@ -11,6 +11,8 @@ dependencies {
 
 apply from: './bintray.gradle'
 
+apply from: '../artifactory.gradle'
+
 //deploy local
 uploadArchives {
     repositories.mavenDeployer {
